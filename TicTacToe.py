@@ -135,6 +135,14 @@ while encendido:
             restart_program()
         elif events2 == 'salir':
             sys.exit()
+    elif lista[4] == '1' and lista[5] == '1' and lista[6] == '1':
+        root.close()
+        root2 = sg.Window('Jugador1gana').Layout(player1)
+        events2, values2 = root2.read()
+        if events2 == 'jug':
+            restart_program()
+        elif events2 == 'salir':
+            sys.exit()
 
 
     """JUGADOR 2"""
@@ -193,6 +201,14 @@ while encendido:
         if events2 == 'jug':
             restart_program()
         elif events2 == 'salir':
+            sys.exit()
+    elif lista[4] == '2' and lista[5] == '2' and lista[6] == '2':
+        root.close()
+        root2 = sg.Window('Jugador1gana').Layout(player1)
+        events2, values2 = root2.read()
+        if events2 == 'jug':
+            restart_program()
+        if events2 == 'salir':
             sys.exit()
 
     """EMPATE"""
